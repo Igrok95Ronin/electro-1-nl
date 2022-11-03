@@ -8,6 +8,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+}
+.header__inner{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    span {
+            font-size: 30px;
+            font-weight: 600;
+            color: #0f9447;
+        }
 }
 
 .header__log {

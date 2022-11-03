@@ -1,0 +1,16 @@
+.consultation {
+    background-image: linear-gradient(to right, #0f9447 20%, #8ec942);
+    padding: 100px 0;
+}
+
+.consultation__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.consultation__title {
+    color: #ffec17;
+    font-size: 48px;
+    font-weight: 600;
+}

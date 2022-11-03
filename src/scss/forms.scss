@@ -1,0 +1,14 @@
+.forms {
+    padding: 100px 0;
+    background: url(/assets/img/formsbd.jpg);
+    background-size: cover;
+}
+
+.forms__title {
+    @include title;
+    color: #ffec17;
+}
+.forms__button {
+    @include btn();
+    padding: 10px 50px !important;
+}
