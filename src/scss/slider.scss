@@ -1,0 +1,119 @@
+.slider {
+}
+
+
+.slider__box {
+    position: relative;
+}
+
+.slider__inner {
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.slider__title {
+    font-weight: 700;
+        font-style: normal;
+        font-family: 'Montserrat', sans-serif;
+        color: #ffffff;
+        font-size: 80px;
+        line-height: 1;
+        letter-spacing: 0px;
+}
+
+.slider__dscr {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+}
+
+.slider-linkBtn {
+    @include btn();
+}
+
+.slider__single-item {
+    display: flex;
+}
+
+.slider__fon {
+    filter: brightness(0.6);
+}
+
+.slider__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.slick-prev {
+position: relative;
+    border: 0;
+    font-size: 0;
+    padding: 0;
+    background-color: transparent;
+
+    &::before {
+        content: "\f104";
+        font-family: 'icomoon';
+        position: absolute;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        width: 60px;
+        height: 60px;
+        font-size: 40px;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        transition: .4s;
+        z-index: 10;
+    }
+
+    &:hover::before {
+        background-color: #fcca03;
+        border-color: #fcca03;
+        color: #171717;
+    }
+}
+
+.slick-next {
+    position: relative;
+    border: 0;
+    font-size: 0;
+    padding: 0;
+    background-color: transparent;
+    &::before {
+        content: "\f105";
+        font-family: 'icomoon';
+        position: absolute;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        width: 60px;
+        height: 60px;
+        font-size: 40px;
+        left: -80px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        transition: .4s;
+    }
+    &:hover::before{
+        background-color: #fcca03;
+        border-color: #fcca03;
+        color: #171717;
+    }
+}
+
