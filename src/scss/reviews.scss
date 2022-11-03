@@ -1,0 +1,63 @@
+.reviews {
+    background: url(/assets/img/bg-09.jpg) no-repeat;
+    background-size: cover;
+    padding: 100px 12px;
+
+    color: #fff;
+}
+
+.reviews__title {
+    @include title;
+    color: #fff;
+}
+
+.reviews__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.reviews__wrapper {
+    position: relative;
+    margin-top: 50px;
+    &::before {
+        content: "\f10d";
+        font-family: 'icomoon';
+        position: absolute;
+        font-size: 40px;
+        font-style: normal;
+        line-height: 1;
+        color: #0f9447;
+        top: -50px;
+    }
+}
+
+.reviews__message {
+    line-height: 1.5;
+    font-size: 24px;
+}
+
+.reviews__inner {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.reviews__img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.reviews__name {
+    line-height: 1.5;
+    font-size: 24px;
+    margin: 0;
+}
+
+.reviews__dol {
+    line-height: 1.5;
+    font-size: 18px;
+    color: #c2c2c3;
+    margin: 0;
+}
