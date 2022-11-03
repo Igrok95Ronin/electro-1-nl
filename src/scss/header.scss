@@ -1,0 +1,19 @@
+@import "style";
+
+.header {
+    padding: 5px 0;
+}
+
+.header__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__log {
+    width: 60px;
+}
+
+.linkBtn {
+    @include btn();
+}
