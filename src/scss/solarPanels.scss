@@ -1,0 +1,37 @@
+.solarPanels {
+    padding: 100px 0;
+}
+.solarPanels__title{
+    @include title();
+}
+
+.solarPanels__box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.solarPanels__inner {
+    outline: 1px solid #6ab431;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 450ms ease-in-out;
+    &:hover {
+        background: #f2f3f9;
+        border-color: #f2f3f9;
+    }
+}
+
+.solarPanels__img {
+    width: 100%;
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.solarPanels__text {
+    color: #29292b;
+}

@@ -1,0 +1,26 @@
+@import 'style';
+.about {
+    background-color: #f2f3f9;
+    padding: 100px 0;
+}
+
+.about__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.about__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.about__title {
+    @include title;
+}
+
+.about__text {
+    font-size: 24px;
+    line-height: 1.41667;
+}

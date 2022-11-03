@@ -63,3 +63,28 @@ body {
             }
         }
 }
+@mixin title {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.375;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #29292b;
+    position: relative;
+
+    span {
+        color: #6ab431;
+        font-weight: bolder;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        background: linear-gradient(to right, #8ec942 50%, #0f9447 120%);
+        width: 100px;
+        height: 3px;
+        bottom: -30px;
+    }
+}

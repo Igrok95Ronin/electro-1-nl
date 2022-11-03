@@ -1,0 +1,27 @@
+.different {
+    padding: 100px 0;
+}
+
+.different__title {
+    @include title();
+}
+
+.different__box {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+}
+
+.different__inner {
+    text-align: center;
+}
+
+.different__name {
+    color: #6ab431;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.different__dscr {
+    line-height: 25px;
+}
