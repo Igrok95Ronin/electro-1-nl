@@ -4,8 +4,8 @@ $site_data      = json_decode(file_get_contents('http://templates.jquery.link/ap
 $phone_name     = $site_data['phone_name'];
 $phone_href     = $site_data['phone_href'];
 
-$text           = str_replace('+', ' ', trim($_GET['t'] ?? 'Entrumpelung'));
-$city           = str_replace('+', ' ', trim($_GET['n'] ?? 'in der nahe'));
+$text           = str_replace('+', ' ', trim($_GET['t'] ?? 'Zonnepanelen plaatsen'));
+$city           = str_replace('+', ' ', trim($_GET['n'] ?? 'Nederland'));
 
 $title = $text . ' ' . $city;
 ?>
@@ -25,8 +25,6 @@ $title = $text . ' ' . $city;
 </head>
 
 <body>
-
-
     <!--Шапка сайта-->
     <header class="header">
         <div class="container-fluid">
@@ -37,7 +35,7 @@ $title = $text . ' ' . $city;
                             <img class="header__log" src="assets/icons/logo.png" alt="">
                             <span>Zonnepanelen</span>
                         </div>
-                        <a class="linkBtn" href="#"><span>111 222 333</span></a>
+                        <a class="linkBtn" href="<?= $phone_href ?>"><span><?= $phone_name ?></span></a>
                     </div>
                 </div>
             </div>
@@ -51,19 +49,19 @@ $title = $text . ' ' . $city;
                     <div class="col-12 container__padding-ziro">
                         <div class="slider__box">
                             <div class="slider__inner">
-                                <h1 class="slider__title">Zonnepanelen plaatsen</h1>
+                                <h1 class="slider__title">Zonnepanelen plaatsen <?= $city ?></h1>
                                 <p class="slider__dscr">Vraag nu vrijblijvend een offerte aan</p>
-                                <a class="slider-linkBtn" href="#"><span>111 222 333</span></a>
+                                <a class="slider-linkBtn" href="<?= $phone_href ?>"><span><?= $phone_name ?></span></a>
                             </div>
                             <div class="slider__single-item">
                                 <div class="slider__fon">
-                                    <img class="slider__img" src="assets/img/fon1.jpg" alt="">
+                                    <img class="slider__img" src="assets/img/fon3.jpg" alt="">
                                 </div>
                                 <div class="slider__fon">
                                     <img class="slider__img" src="assets/img/fon2.jpg" alt="">
                                 </div>
                                 <div class="slider__fon">
-                                    <img class="slider__img" src="assets/img/fon3.jpg" alt="">
+                                    <img class="slider__img" src="assets/img/fon1.jpg" alt="">
                                 </div>
                             </div>
 
@@ -126,7 +124,7 @@ $title = $text . ' ' . $city;
                         <h2 class="about__title">Een paar woorden <span>over ons</span></h2>
                         <div class="about__box">
                             <div class="about__left">
-                                <img class="about__img" src="/assets/img/about.jpg" alt="">
+                                <img class="about__img" src="./assets/img/about.jpg" alt="">
                             </div>
                             <div class="about__right">
                                 <p class="about__text">Wij bieden u zonnepaneel systemen aan op maat, zodat u met plug
@@ -140,7 +138,7 @@ $title = $text . ' ' . $city;
                                     iets voor u kunnen betekenen. We zijn altijd bereid tot een vrijblijvend informatief
                                     gesprek en komen graag bij u langs
                                     om het een en ander toe te lichten.</p>
-                                <a class="linkBtn" href="#"><span>111 222 333</span></a>
+                                <a class="linkBtn" href="<?= $phone_href ?>"><span><?= $phone_name ?></span></a>
                             </div>
                         </div>
                     </div>
@@ -180,12 +178,12 @@ $title = $text . ' ' . $city;
                     <div class="col-12 container__padding-ziro">
                         <h2 class="ourWork__title">Voorbeelden <span>van ons werk</span></h2>
                         <div class="ourWork__box">
-                            <img class="ourWork__img" src="/assets/img/11mt-1131-home-img4-1.jpg" alt="">
-                            <img class="ourWork__img" src="/assets/img/22mt-1131-home-img9.jpg" alt="">
-                            <img class="ourWork__img" src="/assets/img/33landing-environment-4-960x660.jpg" alt="">
-                            <img class="ourWork__img" src="/assets/img/44landing-environment-2-720x459.jpg" alt="">
-                            <img class="ourWork__img" src="/assets/img/55mt-1531-carusel-img03.jpg" alt="">
-                            <img class="ourWork__img" src="/assets/img/66mt-1531-home-img04.jpg" alt="">
+                            <img class="ourWork__img" src="./assets/img/11mt-1131-home-img4-1.jpg" alt="">
+                            <img class="ourWork__img" src="./assets/img/22mt-1131-home-img9.jpg" alt="">
+                            <img class="ourWork__img" src="./assets/img/33landing-environment-4-960x660.jpg" alt="">
+                            <img class="ourWork__img" src="./assets/img/44landing-environment-2-720x459.jpg" alt="">
+                            <img class="ourWork__img" src="./assets/img/55mt-1531-carusel-img03.jpg" alt="">
+                            <img class="ourWork__img" src="./assets/img/66mt-1531-home-img04.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -202,7 +200,7 @@ $title = $text . ' ' . $city;
                                     verkrijgbaarheid van de omvormer overgestapt op Emphase.
                                     Geen moment spijt van gehad. De panelen zijn keurig gemonteerd met oog...</p>
                                 <div class="reviews__inner">
-                                    <img src="/assets/img/1mess.jpg" alt="" class="reviews__img">
+                                    <img src="./assets/img/1mess.jpg" alt="" class="reviews__img">
                                     <div>
                                         <p class="reviews__name">Willem Claessens</p>
                                         <p class="reviews__dol">Vaste klant</p>
@@ -214,7 +212,7 @@ $title = $text . ' ' . $city;
                                     monteurs Mitchel en Maarten. In een halve dag lagen de
                                     kabels en de panelen er. Daarna legde Mitchel de werking van...</p>
                                 <div class="reviews__inner">
-                                    <img src="/assets/img/2mess.jpg" alt="" class="reviews__img">
+                                    <img src="./assets/img/2mess.jpg" alt="" class="reviews__img">
                                     <div>
                                         <p class="reviews__name">Melanie Wouters</p>
                                         <p class="reviews__dol">Vaste klant</p>
@@ -226,7 +224,7 @@ $title = $text . ' ' . $city;
                                     vriendelijk maar blijven professioneel. Samen met de
                                     buren gekozen voor een oplossing met ieder 12 panelen. Eerst wilde we...</p>
                                 <div class="reviews__inner">
-                                    <img src="/assets/img/3mess.jpg" alt="" class="reviews__img">
+                                    <img src="./assets/img/3mess.jpg" alt="" class="reviews__img">
                                     <div>
                                         <p class="reviews__name">Juliaan Bosmans</p>
                                         <p class="reviews__dol">Vaste klant</p>
@@ -244,7 +242,7 @@ $title = $text . ' ' . $city;
                     <div class="col-12 container">
                         <div class="consultation__box">
                             <h2 class="consultation__title">Do you need a Consultation?</h2>
-                            <a class="linkBtn" href="#"><span>111 222 333</span></a>
+                            <a class="linkBtn" href="<?= $phone_href ?>"><span><?= $phone_name ?></span></a>
                         </div>
                     </div>
                 </div>

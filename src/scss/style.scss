@@ -23,7 +23,6 @@ li {
 }
 
 body {
-    outline: 1px solid red;
     margin: auto;
     padding: 0;
     font: 15px Helvetica, Arial, sans-serif;
@@ -66,14 +65,13 @@ body {
 @mixin title {
     text-align: center;
     margin-bottom: 80px;
-    font-size: 48px;
+    font-size: clamp(28px, 6vw, 48px);
     font-weight: 500;
     line-height: 1.375;
     font-weight: 700;
     text-transform: capitalize;
     color: #29292b;
     position: relative;
-
     span {
         color: #6ab431;
         font-weight: bolder;

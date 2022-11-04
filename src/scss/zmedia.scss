@@ -1,0 +1,94 @@
+@import "style";
+
+//1900
+@media(max-width: 1900px) {}
+//1300
+@media(max-width: 1300px) {
+    .slider__inner {
+        width: 100%;
+    }
+    .different__box {
+        gap: 28px;
+    }
+
+}
+//1024
+@media(max-width: 1024px) {
+    .solarPanels__box,
+    .different__box,
+    .ourWork__box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about__box {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .reviews__box {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+        .consultation__box {
+            flex-direction: column;
+        }
+}
+//768
+@media(max-width: 768px) {
+    .solarPanels,
+    .about,
+    .different,
+    .ourWork,
+    .consultation,
+    .forms {
+        padding: 50px 0;
+    }
+    .reviews {
+        padding: 50px 12px;
+    }
+}
+//600px
+@media(max-width: 600px) {
+    .header {
+        display: none;
+    }
+}
+//550
+@media(max-width: 550px) {
+    .solarPanels__box,
+    .different__box,
+    .ourWork__box {
+        grid-template-columns: 1fr;
+    }
+}
+//425
+@media(max-width: 425px) {
+    .slider__dscr {
+            font-size: 18px !important;
+        }
+    .slick-next::before {
+        width: 40px;
+        height: 40px;
+        left: -50px;
+        top: 58%;
+    }
+    .slick-prev::before {
+        width: 40px;
+        height: 40px;
+        left: 10px;
+        top: 58%;
+    }
+    .slider__img {
+        min-height: 50vh;
+    }
+    .slider__inner {
+        top: 40%;
+    }
+    .about__text {
+        font-size: 19px;
+    }
+    .reviews__message {
+        font-size: 19px;
+    }
+    .reviews__name {
+        font-size: 20px;
+    }
+}

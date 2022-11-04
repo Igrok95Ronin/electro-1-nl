@@ -5,6 +5,7 @@
 
 .ourWork__title {
     @include title;
+    padding: 0 12px;
 }
 
 .ourWork__box {
